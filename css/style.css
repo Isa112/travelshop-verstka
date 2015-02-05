@@ -93,7 +93,7 @@ textarea {outline: 0;}img{max-width: 100%;}
 
 /*basic*/
 
-body {font-family: "Champagne-Arial";background: url(../travelshop.jpg) center top no-repeat;min-height: 20000px;}
+body {font-family: "Champagne-Arial";/*background: url(../travelshop.jpg) center top no-repeat;min-height: 20000px;*/}
 .wrapper {width: 1200px;margin: 0 auto;overflow: hidden;}
 h3.main_title {font-family: "Arial-Black";font-size: 38px;color: #fdc900;text-transform: uppercase;text-align: center;margin: 22px 0 17px 0;}
 

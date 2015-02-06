@@ -34,7 +34,7 @@ textarea {outline: 0;}img{max-width: 100%;}
     url("../fonts/TrebuchetMS-Bold.woff") format("woff"),
     url("../fonts/TrebuchetMS-Bold.ttf") format("truetype");
     font-style: normal;
-    font-weight: 700;
+    font-weight: normal;
 }
 @font-face {
     font-family: "TrebuchetMS";
@@ -73,6 +73,15 @@ textarea {outline: 0;}img{max-width: 100%;}
     font-weight: normal;
 }
 @font-face {
+    font-family: "ArialNarrow";
+    src: url("../fonts/ArialNarrow.eot");
+    src: url("../fonts/ArialNarrow.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialNarrow.woff") format("woff"),
+    url("../fonts/ArialNarrow.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
     font-family: "RBCGROTESK-REGULAR";
     src: url("../fonts/RBCGROTESK-REGULAR.eot");
     src: url("../fonts/RBCGROTESK-REGULAR.eot?#iefix")format("embedded-opentype"),
@@ -95,9 +104,9 @@ textarea {outline: 0;}img{max-width: 100%;}
 
 body {font-family: "Champagne-Arial";/*background: url(../travelshop.jpg) center top no-repeat;min-height: 20000px;*/}
 .wrapper {width: 1200px;margin: 0 auto;overflow: hidden;}
-h3.main_title {font-family: "Arial-Black";font-size: 38px;color: #fdc900;text-transform: uppercase;text-align: center;margin: 22px 0 17px 0;}
+h3.main_title {font-family: "Arial-Black";font-size: 38px;color: #fdc900;text-transform: uppercase;text-align: center;margin: 22px 0 17px 0;text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.75);}
 
-.c {opacity: 0.7;}
+/*.c {opacity: 0.7;}*/
 
 /**************************
         header
@@ -118,7 +127,7 @@ header .logo {float: left;width: 400px;font-size: 0;line-height: 0;text-align: c
 /* order btn */
 
 header .order_btn {float: right;width: 400px;}
-  header .order_btn a {display: block;font-family: "TrebuchetMS-Bold";font-size: 16px;line-height: 39px;text-decoration: none;text-align: center;margin: 24px 0 0 150px;text-transform: uppercase;color: #fff;padding: 10px 0 10px 5px;
+  header .order_btn a {display: block;font-family: "TrebuchetMS";font-size: 16px;line-height: 39px;text-decoration: none;text-align: center;margin: 24px 0 0 150px;text-transform: uppercase;color: #fff;padding: 10px 0 10px 5px;font-weight: 700;
 
     background: rgb(253,201,0); /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -160,6 +169,7 @@ nav {border-top:9px solid #002983;border-bottom:8px solid #002983;height: 86px;}
     nav ul li:nth-child(6) a {background: url(../img/menu_icons/item_6.png) center 0 no-repeat;}
     nav ul li:nth-child(7) a {background: url(../img/menu_icons/item_7.png) center 0 no-repeat;}
 
+      nav ul li a:hover {text-decoration: underline;}
 /**************************
         section slider
 **************************/
@@ -176,7 +186,7 @@ section {position: relative;height: 736px;}
       .flexslider ul.flex-direction-nav a.flex-prev {width: 22px;height: 53px;position: absolute;top: 45%;left: 17px;background: url(../img/menu_icons/prev.png) 0 0 no-repeat;z-index: 11;}
       .flexslider ul.flex-direction-nav a.flex-next  {width: 22px;height: 53px;position: absolute;top: 45%;right: 21px;background: url(../img/menu_icons/next.png) 0 0 no-repeat;z-index: 11;}
 
-  .flexslider h2 {color: #fff;font-family: "Arial-Black";font-size: 46px;left: 50%;line-height: 80px;margin-left: -450px;padding-left: 17px;position: absolute;text-align: center;text-transform: uppercase;top: 112px;width: 900px;}
+  .flexslider h2 {color: #fff;font-family: "Arial-Black";font-size: 46px;left: 50%;line-height: 80px;margin-left: -450px;padding-left: 17px;position: absolute;text-align: center;text-transform: uppercase;top: 112px;width: 900px;text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.75);}
 
 /*slider_form*/
 
@@ -188,7 +198,7 @@ section {position: relative;height: 736px;}
 
 article {padding-bottom: 40px;}
   article .wrapper {width: 1000px;}
-    article h4 {font-family: "Arial-Black";font-size: 30px;color: #fdc900;text-transform: uppercase;text-align: center;margin: 18px 24px 27px 0;}
+    article h4 {font-family: "Arial-Black";font-size: 30px;color: #fdc900;text-transform: uppercase;text-align: center;margin: 18px 24px 27px 0;text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.75);}
 
 /*news*/
 
@@ -244,7 +254,7 @@ a.read_more {display: block;text-decoration: none;padding: 5px 10px 5px 23px;bac
         search_tour
 **************************/
 
-.search_tour {height: 989px;margin-bottom: 50px;}
+.search_tour .wrapper {height: 989px;margin-bottom: 50px;background: #fdc900;}
 
 /**************************
         tours
@@ -259,6 +269,10 @@ a.read_more {display: block;text-decoration: none;padding: 5px 10px 5px 23px;bac
 
   .tours ul li:nth-child(3) {margin-right: 0;}
   .tours ul li:nth-child(6) {margin-right: 0;}
+  .tours ul li:nth-child(9) {margin-right: 0;}
+  .tours ul li:nth-child(12) {margin-right: 0;}
+  .tours ul li:nth-child(15) {margin-right: 0;}
+  .tours ul li:nth-child(18) {margin-right: 0;}
 
 /*tours title*/
 
@@ -275,8 +289,8 @@ a.read_more {display: block;text-decoration: none;padding: 5px 10px 5px 23px;bac
   .tours_content a:hover {text-decoration: underline;}
     .tours_content h6 {font-family: "Arial";font-size: 16px;color: #fff;position: absolute;top: 0;left: 0;background: #ff0400;height: 22px;line-height: 22px;padding: 0 8px;text-align: center;}
 
-.tours ul li:nth-child(2) .tours_content h6, .tours ul li:nth-child(5) .tours_content h6 {background: #00aaff;}
-.tours ul li:nth-child(3) .tours_content h6, .tours ul li:nth-child(6) .tours_content h6 {background: #ef7d00;}
+.tours ul li:nth-child(2) .tours_content h6, .tours ul li:nth-child(5) .tours_content h6, .tours ul li:nth-child(8) .tours_content h6,.tours ul li:nth-child(11) .tours_content h6,.tours ul li:nth-child(14) .tours_content h6,.tours ul li:nth-child(17) .tours_content h6 {background: #00aaff;}
+.tours ul li:nth-child(3) .tours_content h6, .tours ul li:nth-child(6) .tours_content h6,.tours ul li:nth-child(9) .tours_content h6, .tours ul li:nth-child(12) .tours_content h6,.tours ul li:nth-child(15) .tours_content h6,.tours ul li:nth-child(18) .tours_content h6  {background: #ef7d00;}
 
 
 /*tours_price*/
@@ -317,7 +331,7 @@ a.more_tours {
 
 .left_side {float: left;width: 476px;}
   .left_side p {font-size: 20px;line-height: 36px;font-family: "TrebuchetMS";color: #000;margin-left: 8px;}
-  .left_side p.blue {font-size: 20px;line-height: 36px;font-family: "GothamProBlack";min-height: 111px;background: #002983;color: #fdc900;text-transform: uppercase;margin: 163px 0 -4px 4px;padding: 0px 0 0 5px;}
+  .left_side p.blue {font-size: 20px;line-height: 36px;font-family: "GothamProBlack";min-height: 111px;background: #002983;color: #fdc900;text-transform: uppercase;margin: 163px 0 -4px 4px;padding: 0px 0 0 5px;text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);}
 
 /*right side*/
 
@@ -357,7 +371,7 @@ a.more_tours {
 **************************/
 
 .reviews {padding-bottom: 46px;background: #002983;margin-bottom: 30px;}
-  .reviews h3 {color: #fff;margin: 5px 8px 43px 0;}
+  .reviews h3 {color: #fff;margin: 5px 8px 43px 0;text-shadow: none;}
 
 /* reviews slider*/
 
@@ -432,3 +446,129 @@ footer {height: 148px;background: #002983;}
     footer p {color: #fff;margin: 0 0 0 50px;font-family: "TrebuchetMS";font-size: 14px;}
     footer a.googstudio {position: absolute;right: 81px;top: 28px;width: 145px;height: 37px;background: url(../img/googstudio.png) 0 0 no-repeat;}
     footer .metrics {position: absolute;bottom: 20px;right: 65px;width: 178px;height: 30px;background: url(../img/metrics.jpg) 0 0 no-repeat;}
+
+
+
+/**************************
+        contacts page
+**************************/
+
+.contacts_col_3 {text-align: center;}
+  .contacts_col_3 p {font-family: "TrebuchetMS";font-size: 16px;line-height: 29px;margin: 0 0 10px 0;}
+  .contacts_col_3 input {width: 209px;height: 28px;border-top: 2px solid #9d9d9d;border-left: 1px solid #9d9d9d;border-right: 0;border-bottom: 0;margin-bottom: 10px;padding: 0 10px;font-family: "TrebuchetMS";font-size: 16px;line-height: 29px;
+
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;}
+  .contacts_col_3 textarea {width: 209px;height: 80px;border-top: 2px solid #9d9d9d;border-left: 1px solid #9d9d9d;border-right: 0;border-bottom: 0;margin-bottom: 10px;padding: 0 10px;font-family: "TrebuchetMS";font-size: 16px;line-height: 29px;resize:none;
+
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;}
+
+    .google_maps {width: 953px;margin: 0 auto;text-align: center;margin-bottom: 124px;}
+      .google_maps p {font-family: "TrebuchetMS";font-size: 16px;line-height: 29px;margin: 0 0 10px 0;}
+
+
+/**************************
+        404 error page
+**************************/
+
+.error_page {text-align: center;margin: 50px 0 450px 0;}
+  .error_page p {font-family: "Arial-Black";font-size: 35px;line-height: 22px;text-transform: uppercase;}
+  .error_page h6 {font-family: "Arial-Black";font-size: 72px;text-transform: uppercase;}
+  .error_page span {font-family: "ArialNarrow";text-transform: uppercase;display: block;text-align: center;font-size: 25px;line-height: 40px;width: 465px;margin: 0 auto 10px auto;}
+  .error_page a {font-family: "Arial-Black";font-size: 25px;line-height: 22px;color: #002983;text-decoration: underline;text-transform: uppercase;}
+  .error_page a:hover {text-decoration: none;}
+
+/**************************
+        viza page
+**************************/
+
+.viza .wrapper {width: 1060px;margin: 55px auto;}
+  .viza h3 {margin-bottom: 40px;}
+
+/*sidebar_viza*/
+
+.sidebar_viza {float: left;width: 355px;}
+  .sidebar_viza ul {}
+    .sidebar_viza ul li {}
+      .sidebar_viza ul li a {display: block;font-family: "TrebuchetMS";font-size: 20px;line-height: 34px;border-bottom: 1px solid #fff;color: #002983;background: #fdc900;height: 34px;text-decoration: none;padding-left: 16px;
+
+      transition: background 0.4s ;
+      -moz-transition: background 0.4s ;
+      -o-transition: background 0.4s;
+      -ms-transition: background 0.4s;
+      -s-transition: background 0.4s;
+      -webkit-transition:  background 0.4s;}
+        .sidebar_viza ul li a:hover {color: #fff;background: #002983;}
+
+/*sidebar_content*/
+
+.sidebar_content {float: right;width: 670px;}
+.sidebar_content p {margin-bottom: 30px;font-family: "Arial";font-size: 14px;line-height: 22px;}
+
+/**************************
+        news_and_blog inner page
+**************************/
+
+.news_and_blog .wrapper {padding: 0 25px;margin-bottom: 80px;margin-top: 55px;}
+.news_and_blog h3 {margin-bottom: 10px;}
+.news_and_blog span {display: block;text-align: center;font-family: "Arial";font-size: 12px;line-height: 22px;color: #9c9c9c;margin-bottom: 15px;}
+.news_and_blog img {width: 470px;height: 299px;float: left;margin-right: 10px;margin-bottom: 5px;}
+.news_and_blog p {margin-bottom: 30px;font-family: "Arial";font-size: 14px;line-height: 22px;color: #000;padding-right: 30px;}
+
+/**************************
+        abroad_tours page
+**************************/
+
+.abroad_tours {margin-top: 100px;}
+  .abroad_tours .wrapper  {border-bottom: 1px solid #002983;}
+    .abroad_tours h3 {margin-bottom: 40px;}
+    .abroad_tours a.more_tours {margin-top: 80px;margin-bottom: 110px;}
+
+/**************************
+        reviews_page page
+**************************/
+
+.reviews_page {}
+  .reviews_page h3 {margin-bottom: 40px;}
+
+/*reviews_inner*/
+
+.reviews_inner {width: 1055px;margin: 0 auto;background: #f0f0f0;padding: 20px 25px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;}
+
+  .reviews_inner_item {padding: 20px;background: #fff;margin-bottom: 20px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;}
+
+    .reviews_inner_item p {font-family: "Arial";font-size: 14px;line-height: 22px;}
+    .reviews_inner_item h6 {font-family: "Arial";font-size: 14px;line-height: 22px;color: #002983;text-align: center;}
+
+  .reviews_inner a.more_reviews, .reviews_inner a.add_review_btn {width: 116px;height: 34px;display: block;margin: -10px auto 30px auto;font-family: "Arial";font-size: 14px;line-height: 34px;color: #002983;text-decoration: none;background: #fdc900;text-align: center;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;}
+
+  .reviews_inner a:hover {text-decoration: underline;}
+
+/*add_review*/
+.add_review {background: none;}
+  .add_review input {width: 128px;padding: 0 20px;border:0;font-family: "Arial";font-size: 14px;height: 24px;margin-bottom: 10px;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;}
+
+  .add_review textarea {width: 990px;padding: 0 20px;border:0;font-family: "Arial";font-size: 14px;resize:none;height: 90px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;}
